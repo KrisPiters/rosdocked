@@ -36,6 +36,12 @@ RUN apt-get install -y ros-indigo-desktop-full
 RUN apt-get install -y x11-apps python-pip build-essential
 RUN pip install catkin_tools
 
+# Additional ROS packages (rocon)
+RUN apt-get install -y ros-indigo-rocon
+
+# gnome-terminal
+RUN apt-get install -y gnome-terminal
+
 # Make SSH available
 EXPOSE 22
 
